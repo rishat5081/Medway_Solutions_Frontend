@@ -1,0 +1,209 @@
+.header {
+  padding: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #ffffff;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #26729c;
+  width: 100%;
+}
+
+.headerUL {
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  flex-direction: unset !important;
+}
+.headerUL a {
+  font-family: Lato, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  color: rgb(85, 85, 85);
+  font-size: 15px;
+  font-weight: 400;
+  padding: 8px 2px;
+  border-radius: 0px;
+  margin: 9px 20px 0px;
+}
+.headerUL a:hover {
+  border-bottom: 2px solid #26729c;
+  color: rgb(85, 85, 85);
+  cursor: pointer;
+}
+
+/* Header Section */
+.intro {
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  /* background: url(../public/1.jpg) center center no-repeat; */
+  background-color: #e5e5e5;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  text-align: center;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.intro .overlay {
+  background: rgba(255, 255, 255, 0.007);
+}
+.intro h1 {
+  font-family: "Raleway", sans-serif;
+  color: #26729c;
+  font-size: 82px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.intro h1 span {
+  font-weight: 800;
+  color: #5ca9fb;
+}
+.intro_text {
+  padding-top: 350px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+.intro p {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+/**end of the header **/
+.logo {
+  color: #26729c;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  margin-right: auto;
+  margin-left: 25px;
+  display: flex;
+}
+
+.logo h1 {
+  margin: auto;
+  padding: 12px;
+}
+.container {
+  padding: auto;
+  width: auto;
+  height: auto;
+  margin: 15px;
+  /* background-color: #f11825; */
+}
+@media (max-width: 1080px) {
+  .container {
+    width: 100%;
+  }
+}
+/* --------------------------------Home Page ----------------------------------------- */
+.productGrid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20% auto auto auto;
+  width: 90%;
+  height: auto;
+  padding: 20px;
+}
+
+/* -------------------------------------------- */
+.developed {
+  padding: 5px;
+  margin: auto;
+}
+.developed p {
+  padding: 2%;
+}
+
+.zoomA {
+  width: 350px;
+  height: 350px;
+  /* ease | ease-in | ease-out | linear */
+  transition: transform ease-in-out 0.3s;
+}
+/* .zoomA:hover {
+  transform: scale(2);
+} */
+
+.productsDiv {
+  padding: auto;
+  align-items: center;
+  background-image: url("../public/background_Image/canola.jpg");
+  background-size: cover;
+}
+
+.productsDiv h3 {
+  margin-top: 35px;
+  padding-top: 30px;
+  color: #f11825;
+  text-align: center;
+  width: auto;
+}
+
+/* ------------------------ image Viewer ---------------------------- */
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  /* grid-area: content; */
+  width: 100%;
+}
+
+.ProductDetails_footer {
+  grid-area: footer;
+  width: auto;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+      /*
+      "....... header header" */
+    "sidebar content content"
+    "footer footer footer";
+  color: #444;
+  margin: 20px 20px;
+  padding: 20px auto;
+  align-content: space-evenly;
+}
+
+.box {
+  /* background-color: #23658a; */
+  border: 2px solid #f11825;
+  color: #23658a;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%;
+}
+.imageBox {
+  /* background-color: #23658a; */
+  border: 2px solid #f11825;
+  color: #23658a;
+  /* border-radius: 5px; */
+  padding: 10px;
+  font-size: 150%;
+}
+
+.imageViewer {
+  border: 2px solid #f11825;
+  margin: 2px;
+  cursor: pointer;
+}
+.productDetails {
+  display: grid;
+  place-items: center;
+  margin: 10px auto;
+  padding: 10px;
+  width: 50%;
+  text-align: justify;
+}

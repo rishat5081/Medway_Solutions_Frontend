@@ -1,0 +1,194 @@
+/* .container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
+
+.main {
+  padding: auto;
+  display: block;
+  width: auto;
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainHeading {
+  padding: auto;
+  margin-top: 5%;
+  height: auto;
+  text-align: center;
+  color: #26729c;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: underline;
+}
+.footer {
+  margin-top: 10px;
+  width: 100%;
+  border-top: 1px solid #eaeaea;
+  background-color: #26729c;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.footer p {
+  margin-top: 10px;
+}
+
+/* 
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #fafafa;
+  //border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+*/
+
+.grid {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  width: auto;
+  padding-bottom: 2%;
+}
+.productButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.productButton a {
+  color: #26729c;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 600;
+  text-align: justify;
+  border: 3px solid #26729c;
+  padding: 15px;
+  transition: 3ms;
+}
+
+.productButton a:hover {
+  background-color: #ccc;
+  color: #f11825;
+  border: 3px solid #26729c;
+  transition: 1000ms;
+  transform-origin: 1%;
+}
+.card {
+  margin: 1rem;
+  padding: 1rem;
+  text-align: justify;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  /* border-radius: 10px; */
+  transition: color 0.15s ease, border-color 0.15s ease;
+  width: 30%;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #f11825;
+  border-color: #f11825;
+}
+
+.cardComponent h5 {
+  margin: 0 0 1rem 0;
+  padding: auto;
+  text-align: center;
+}
+
+.cardComponent p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+.cardComponent img {
+  height: 150px;
+}
+
+.cardComponent {
+  background-color: #ffffff00;
+  border: 3px solid #26729c;
+  position: relative;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: justify;
+  color: inherit;
+  text-decoration: none;
+  /* border-radius: 10px; */
+  transition: color 0.15s ease, border-color 0.15s ease;
+  width: 30%;
+}
+
+.cardComponentOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  /* border-radius: 8px; */
+  opacity: 0;
+  transition: 1s ease;
+  background-color: #26729cad;
+}
+
+.cardComponent:hover .cardComponentOverlay {
+  opacity: 1;
+}
+
+.icon {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+}
+
+/**********/
